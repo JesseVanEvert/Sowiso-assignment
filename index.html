@@ -1,0 +1,25 @@
+<script>
+    var a = Math.floor(Math.random() * 100);
+    var b = Math.floor(Math.random() * 100);
+
+    document.write(a + " + " + b + "=")
+</script>
+
+
+<form>
+    <input type="text" name="answer" id="answer">
+    <button onclick="calculate()">Verzend</button>
+</form>
+
+<script>
+    function calculate(){
+        var answer = document.getElementById("answer").value;
+
+        if((a + b) == answer){
+            window.alert("right answer");
+        }
+        else{
+            window.alert("wrong answer");
+        }
+    }
+</script>
